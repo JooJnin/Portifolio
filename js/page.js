@@ -7,11 +7,13 @@ const cards = [
     {
         id : "noflex",
         href : "./pages/noflex",
+        img: "./assets/flexless.jpeg",
         p : "Página Flexless"    
     },
     {
         id : "flex",
         href : "./pages/flex",
+        img: "./assets/flex.jpeg",
         p : "Página Flex"
     }
 ]
@@ -25,7 +27,11 @@ page.push(footer());
 page.forEach(e => document.querySelector("body").appendChild(e));
 
 const portifolio = document.getElementById("portifolio");
+const divCard = document.createElement("div");
+divCard.classList.add("cardConteiner")
 
 cards.forEach((card) => {
-    portifolio.appendChild(makeCards(card));
-})
+    divCard.appendChild(makeCards(card));
+});
+
+portifolio.appendChild(divCard);

@@ -1,42 +1,74 @@
 *{
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    margin:0;
+    padding:0;
 }
 
 :root{
-    --main-font-size:20px;
-    --second-font-size:20px;
-    --font-size: 20px;
-    font-family: new-kansas, sans-serif;
-    --font-color1: ;
-    --font-color2: ;
-    --bg-color1: ;
-    --bg-color2: ;
-    --emphasis-color: ;
+    font-size: 20px;
+    --title-family: "Open Sans", sans-serif;
+    --plain-family: "Roboto Flex", sans-serif;
+    --font-color1: #B4CEE4;
+    --font-color2: #E7C5C5;
+    --bg-color1: #191B24;
+    --bg-color2: #40112A;
+    --emphasis-color: #3A2358;
 }
+h1,h2,h3{
+    font-family: var(--title-family);
+}
+
+p,a{
+    font-family: var(--plain-family);
+}
+
 body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    min-height: 100vh;    
+    min-height: 100vh;
+    color: var(--font-color1);
+    background-color: var(--bg-color1);
 }
+
 header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5em 2em;
+    padding: 0.5em 2em;
     width: auto;
     height: 5%;
+}
+
+header{
+    position: relative;
+    margin-top: 1rem;
+}
+footer{
+    background-color: var(--bg-color2);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
 nav{
     display:flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: var(--font-color2);
+
     border-radius: 1.5em;
 }
 
 a{
-    margin: 1rem 2em;
+    text-decoration: none;
+    color: var(--emphasis-color);
+    margin: 1.5rem 3em;
+    font-weight: 1000;
 }
 
 .logo{
@@ -44,10 +76,54 @@ a{
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
+
 .card{
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-color2);
+    color: var(--font-color1);
+    text-align: center;
+    img{
+        width: 80%;
+    }
+}
+
+.card:hover::after{
+    position:fixed;
+    background-color: var(--font-color2);
+    color: var(--bg-color2);
+    padding: 1.2rem;
+    border-radius: 2.5rem;
+    content: "Sorria, você está sendo gravado";
+    left: 20px;
+    top: 20px;
+
+}
+
+.cardConteiner{
+    display: flex;
+    .card{
+        display: inline-block;
+        width: fit-content;        
+    }
+
+}
+#introcução{
+    font-size: 3rem;
+}
+
+#portifolio{
+    background-color: var(--bg-color2);
+    height: auto;
+    line-height: 2em;
+    h1{
+        font-weight: 800;
+        margin-top: 12px;
+    }
+}
+#about{
+    line-height: 3em;
 }

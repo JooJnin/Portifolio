@@ -11,16 +11,16 @@ export default function(){
             'id' : "introducao",
             'h2' : "Hello World!",
             'h1' : "Sou o Francisco Santos",
-            'p'  : "Aspirante FullStack"
+            'p'  : "Aspirante FullStack pela Alpha EdTech"
         },
         {
             'id'      : "portifolio",
-            'h1'      : "Meu portifólio",
+            'h1'      : "Meu Portifólio",
         },
         {
             'id'      : "about",
             'h2'      : "Sobre mim",
-            'h3'      : "Sou um aspirante a Desenvolvedor",
+            'h3'      : "Essa é a minha evolução em CSS",
             'p'       : "Hi! Sou um entusiasta de tecnologia. E estou ingressando na area de desenvolvimento web"
         }
     ]
