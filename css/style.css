@@ -1,9 +1,44 @@
+*{
+    border: solid 1px red;
+}
+
 :root{
     --main-font-size:20px;
     --second-font-size:20px;
     --font-size: 20px;
     font-family: new-kansas, sans-serif;
+    --font-color1: ;
+    --font-color2: ;
+    --bg-color1: ;
+    --bg-color2: ;
+    --emphasis-color: ;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;    
+}
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 2em;
+    width: auto;
+    height: 5%;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    border-radius: 1.5em;
+}
+
+a{
+    margin: 1rem 2em;
+}
+
 .logo{
     background-image: url("../assets/logo.svg");
     background-repeat: no-repeat;
@@ -11,4 +46,8 @@
     background-position: center;
     height: 40px;
     width: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
 }
