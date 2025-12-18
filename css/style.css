@@ -3,3 +3,11 @@
     --second-font-size:20px;
     --font-size: 20px;
 }
+.logo{
+    background-image: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
