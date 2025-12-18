@@ -54,7 +54,6 @@ header
     }
     body{
         header, main{width: 100%;}
-        header{}
         main{background-color: antiquewhite;}
     }
     #flex-around

@@ -1,4 +1,5 @@
 export function makeSection(sectionObj){
+    
     const section = document.createElement("section");
     const sectionKeys = Object.keys(sectionObj);
 
