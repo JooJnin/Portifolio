@@ -12,8 +12,7 @@ export default function(){
     
     logo.classList.add("logo");
     
-    footerText.textContent = footerParams.text
-    
+    footerText.textContent = footerParams.text;
     
     
     footer.appendChild(logo);
