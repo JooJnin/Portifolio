@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
 }
-
 :root{
     font-size: 20px;
     --title-family: "Open Sans", sans-serif;
@@ -52,7 +51,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 40vh;
 }
 
@@ -60,14 +59,14 @@ nav{
     display:flex;
     justify-content: space-between;
     background-color: var(--font-color2);
-
+    
     border-radius: 1.5em;
 }
 
 a{
     text-decoration: none;
     color: var(--emphasis-color);
-    margin: 1.5rem 3em;
+    padding: 1.5rem 3em;
     font-weight: 1000;
 }
 
@@ -81,49 +80,113 @@ a{
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
     background-color: var(--bg-color2);
     color: var(--font-color1);
     text-align: center;
     img{
-        width: 80%;
+        width:75%;
     }
+}
+
+/* .card::after{
+    display: none;
+    position: relative;
+    padding: 1.2rem;
+    line-height: 3.5em;
+    content :"teste";
+    transition: width 0.3s ease;
+    width: 0;
+
+    color: var(--bg-color2);
+    background-color: var(--font-color2);
+    border-radius: 2.5rem;
 }
 
 .card:hover::after{
-    position:fixed;
-    background-color: var(--font-color2);
-    color: var(--bg-color2);
-    padding: 1.2rem;
-    border-radius: 2.5rem;
-    content: "Sorria, você está sendo gravado";
-    left: 20px;
-    top: 20px;
-
-}
+    width: fit-content;
+    display: inherit;
+} */
 
 .cardConteiner{
     display: flex;
+    
     .card{
-        display: inline-block;
-        width: fit-content;        
+        display: inline-block;      
     }
-
+    
 }
-#introcução{
-    font-size: 3rem;
+#introducao{
+    padding-left: 5%;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 #portifolio{
     background-color: var(--bg-color2);
     height: auto;
+    align-items: center;
     line-height: 2em;
     h1{
         font-weight: 800;
-        margin-top: 12px;
+        margin: 1.5em;
     }
 }
 #about{
     line-height: 3em;
+    padding-left: 5%;
+}
+
+@media (max-width: 768px) {
+    :root { font-size: 14px; }
+
+    .hamburger { display: flex; }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--font-color2);
+        z-index: 100;
+    }
+
+    nav.active { display: flex; }
+
+    nav a {
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        width: 100%;
+        text-align: center;
+    }
+
+    #introducao { text-align: center; align-items: center; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section { padding: 2rem 8%; }
+    .card { width: 45%; }
+    nav a { padding: 1rem 1.5em; }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    header, footer { padding: 1rem 10%; }
+    .card { width: 30%; }
+}
+
+@media (min-width: 1200px) {
+    header, section, footer {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .cardConteiner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        padding: 1.5rem 3em;
+    }
 }
