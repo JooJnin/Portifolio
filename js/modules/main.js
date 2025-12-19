@@ -11,7 +11,7 @@ export default function(){
             'id' : "introducao",
             'h2' : "Hello World!",
             'h1' : "Sou o Francisco Santos",
-            'p'  : "Aspirante FullStack pela Alpha EdTech"
+            'p'  : "Developer FullStack pela Alpha EdTech"
         },
         {
             'id'      : "portifolio",
@@ -21,7 +21,7 @@ export default function(){
             'id'      : "about",
             'h2'      : "Sobre mim",
             'h3'      : "Essa é a minha evolução em CSS",
-            'p'       : "Hi! Sou um entusiasta de tecnologia. E estou ingressando na area de desenvolvimento web"
+            'p'       : "Hi! Sou um entusiasta de tecnologia e estou ingressando na área de desenvolvimento web. Aos 22 anos, curso Análise e Desenvolvimento de Sistemas (ADS), onde busco solidificar meus conhecimentos em lógica, arquitetura e boas práticas de programação. Atualmente, foco meus estudos no ecossistema HTML, CSS, JS, Python, buscando criar soluções que unam funcionalidade e uma excelente experiência para o usuário. Sou movido pelo aprendizado contínuo e pela resolução de problemas complexos através do código."
         }
     ]
 
